@@ -1,6 +1,7 @@
 package com.cws.moneykeeper3.service.impl;
 
 import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,11 +18,10 @@ public class TransactionExpenseImpl implements TransactionExpenseService {
 	private TransactionExpenseDao transactionExpenseDao;
 
 	// end
-	
-	
+
 	@Override
 	public List<TransactionExpense> search1() {
-		List<TransactionExpense> res =  transactionExpenseDao.search1();
+		List<TransactionExpense> res = transactionExpenseDao.search1();
 		return res;
 	}
 
@@ -30,7 +30,5 @@ public class TransactionExpenseImpl implements TransactionExpenseService {
 
 		return transactionExpenseDao.search2();
 	}
-
-
 
 }
